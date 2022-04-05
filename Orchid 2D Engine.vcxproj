@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{499C9C99-DC39-4BEE-B10E-AD3DE8156771}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Orchid2DEngine</RootNamespace>
+    <ProjectName>Orchid 2D Engine</ProjectName>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(SolutionDir)thirdparty\libogg\bin\$(Configuration);$(SolutionDir)thirdparty\libvorbis\bin\$(Configuration);$(SolutionDir)thirdparty\tinyxml2\bin\$(Configuration);$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)thirdparty\tinyxml2;$(SolutionDir)thirdparty\libogg\include;$(SolutionDir)thirdparty\libvorbis\include;$(DXSDK_DIR)Include;$(SolutionDir)/src;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(SolutionDir)thirdparty\libogg\bin\debug;$(SolutionDir)thirdparty\libvorbis\bin\debug\libvorbis;$(SolutionDir)thirdparty\libvorbis\bin\debug\libvorbisfile;$(SolutionDir)thirdparty\tinyxml2\bin\debug;$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)thirdparty\tinyxml2;$(SolutionDir)thirdparty\libogg\include;$(SolutionDir)thirdparty\libvorbis\include;$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)thirdparty\tinyxml2;$(SolutionDir)thirdparty\libogg\include;$(SolutionDir)thirdparty\libvorbis\include;$(DXSDK_DIR)Include;$(SolutionDir)/src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)thirdparty\libogg\bin\$(Configuration);$(SolutionDir)thirdparty\libvorbis\bin\$(Configuration);$(SolutionDir)thirdparty\tinyxml2\bin\$(Configuration);$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)\bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)thirdparty\tinyxml2;$(SolutionDir)thirdparty\libogg\include;$(SolutionDir)thirdparty\libvorbis\include;$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)thirdparty\libogg\bin\release;$(SolutionDir)thirdparty\libvorbis\bin\release;$(SolutionDir)thirdparty\tinyxml2\bin\release;$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\audio\OGG-Player.h" />
+    <ClInclude Include="src\core\Graphics.h" />
+    <ClInclude Include="src\core\Input.h" />
+    <ClInclude Include="src\core\Physics.h" />
+    <ClInclude Include="src\core\Sound.h" />
+    <ClInclude Include="src\core\System.h" />
+    <ClInclude Include="src\core\system\ErrorHandler.h" />
+    <ClInclude Include="src\core\system\Profiler.h" />
+    <ClInclude Include="src\core\system\resources\AllocatedMemory.h" />
+    <ClInclude Include="src\core\system\resources\ResourceManager.h" />
+    <ClInclude Include="src\core\system\Settings.h" />
+    <ClInclude Include="src\core\system\time\TimeManager.h" />
+    <ClInclude Include="src\core\system\time\Watch.h" />
+    <ClInclude Include="src\game\Game.h" />
+    <ClInclude Include="src\renderer\camera\Camera.h" />
+    <ClInclude Include="src\renderer\camera\OrthoCamera.h" />
+    <ClInclude Include="src\renderer\font\Font.h" />
+    <ClInclude Include="src\renderer\GraphicDefinitions.h" />
+    <ClInclude Include="src\renderer\Space.h" />
+    <ClInclude Include="src\renderer\sprite\Animated_Sprites.h" />
+    <ClInclude Include="src\renderer\sprite\Static_Sprite.h" />
+    <ClInclude Include="src\core\system\resources\TexResource.h" />
+    <ClInclude Include="src\renderer\tilemap\Layer.h" />
+    <ClInclude Include="src\renderer\tilemap\Tile.h" />
+    <ClInclude Include="src\renderer\tilemap\Tilelayer.h" />
+    <ClInclude Include="src\renderer\tilemap\Tilemap.h" />
+    <ClInclude Include="src\renderer\tilemap\Tileset.h" />
+    <ClInclude Include="src\renderer\Transform.h" />
+    <ClInclude Include="src\resource\resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\audio\OGG-Player.cpp" />
+    <ClCompile Include="src\core\Graphic.cpp" />
+    <ClCompile Include="src\core\Input.cpp" />
+    <ClCompile Include="src\core\Physics.cpp" />
+    <ClCompile Include="src\core\Sound.cpp" />
+    <ClCompile Include="src\core\System.cpp" />
+    <ClCompile Include="src\core\system\ErrorHandler.cpp" />
+    <ClCompile Include="src\core\system\Profiler.cpp" />
+    <ClCompile Include="src\core\system\resources\ResourceManager.cpp" />
+    <ClCompile Include="src\core\system\time\TimeManager.cpp" />
+    <ClCompile Include="src\game\Game.cpp" />
+    <ClCompile Include="src\platform\win32\OS-Handler.cpp" />
+    <ClCompile Include="src\renderer\camera\Camera.cpp" />
+    <ClCompile Include="src\renderer\camera\OrthoCamera.cpp" />
+    <ClCompile Include="src\renderer\font\Font.cpp" />
+    <ClCompile Include="src\renderer\sprite\Animated_Sprites.cpp" />
+    <ClCompile Include="src\renderer\sprite\Static_Sprite.cpp" />
+    <ClCompile Include="src\renderer\tilemap\Layer.cpp" />
+    <ClCompile Include="src\renderer\tilemap\Tile.cpp" />
+    <ClCompile Include="src\renderer\tilemap\Tilelayer.cpp" />
+    <ClCompile Include="src\renderer\tilemap\Tilemap.cpp" />
+    <ClCompile Include="src\renderer\tilemap\Tileset.cpp" />
+    <ClCompile Include="src\renderer\Transform.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="src\resource\Orchid 2D Engine.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

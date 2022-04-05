@@ -27,6 +27,12 @@
 *.lib
 
 # Executables
-*.exe
 *.out
 *.app
+
+# Folders
+**/bin/
+**/temp/
+**/Debug/
+**/Release/
+.vs/
