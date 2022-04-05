@@ -137,7 +137,7 @@
     <ClCompile Include="src\core\System.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\platform\win32\OS-Handler.cpp">
+    <ClCompile Include="src\platform\win32\win32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\renderer\camera\Camera.cpp">

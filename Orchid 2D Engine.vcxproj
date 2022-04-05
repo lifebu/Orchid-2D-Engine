@@ -197,7 +197,7 @@
     <ClCompile Include="src\core\system\resources\ResourceManager.cpp" />
     <ClCompile Include="src\core\system\time\TimeManager.cpp" />
     <ClCompile Include="src\game\Game.cpp" />
-    <ClCompile Include="src\platform\win32\OS-Handler.cpp" />
+    <ClCompile Include="src\platform\win32\win32.cpp" />
     <ClCompile Include="src\renderer\camera\Camera.cpp" />
     <ClCompile Include="src\renderer\camera\OrthoCamera.cpp" />
     <ClCompile Include="src\renderer\font\Font.cpp" />
