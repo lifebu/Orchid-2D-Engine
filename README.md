@@ -22,6 +22,8 @@ This is a game engine playground I developped in 2014. It features:
 - Simple tile-based renderer using DirectX 9.0c
 - Keyboard, mouse and gamepad support using Direct Input.
 
+**Note**: The engine is quite old (from 2014) and does not truly represent my current skillset for designing and implementing C++ code. It was uploaded and published to show my previous work as part of my résumé.
+
 ## Technologies Used
 - [tinyxml2](https://github.com/leethomason/tinyxml2)
 - [libogg](https://xiph.org/ogg/)
